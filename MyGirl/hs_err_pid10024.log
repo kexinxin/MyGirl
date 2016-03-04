@@ -1,0 +1,133 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:127), pid=10024, tid=11016
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_45-b14) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.45-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002960800):  JavaThread "Unknown thread" [_thread_in_vm, id=11016, stack(0x0000000002790000,0x0000000002890000)]
+
+Stack: [0x0000000002790000,0x0000000002890000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x32b57a]
+V  [jvm.dll+0x279873]
+V  [jvm.dll+0x27a509]
+V  [jvm.dll+0x2717a6]
+V  [jvm.dll+0x68183]
+V  [jvm.dll+0x68273]
+V  [jvm.dll+0x7d74a]
+V  [jvm.dll+0x7dab6]
+V  [jvm.dll+0xf2157]
+V  [jvm.dll+0xf24e6]
+V  [jvm.dll+0x20f097]
+V  [jvm.dll+0x240e0a]
+V  [jvm.dll+0x15ba41]
+C  [javaw.exe+0x217e]
+C  [javaw.exe+0xcd17]
+C  [javaw.exe+0xcdab]
+C  [KERNEL32.DLL+0x12d92]
+C  [ntdll.dll+0x9f64]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002960800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=11016, stack(0x0000000002790000,0x0000000002890000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.015 loading class java/lang/CharSequence done
+Event: 0.015 loading class java/lang/String done
+Event: 0.015 loading class java/lang/Class
+Event: 0.015 loading class java/lang/reflect/AnnotatedElement
+Event: 0.015 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.015 loading class java/lang/reflect/GenericDeclaration
+Event: 0.015 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.015 loading class java/lang/reflect/Type
+Event: 0.015 loading class java/lang/reflect/Type done
+Event: 0.015 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x00007ff624660000 - 0x00007ff624697000 	C:\Program Files\Java\jre1.8.0_45\bin\javaw.exe
+0x00007ffcdc820000 - 0x00007ffcdc9e1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffcdc5e0000 - 0x00007ffcdc68d000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ffcd9980000 - 0x00007ffcd9b5d000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ffcdbe70000 - 0x00007ffcdbf16000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ffcdb550000 - 0x00007ffcdb5ed000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ffcd9d30000 - 0x00007ffcd9d8b000 	C:\WINDOWS\system32\sechost.dll
+0x00007ffcdb3e0000 - 0x00007ffcdb506000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ffcdc020000 - 0x00007ffcdc16e000 	C:\WINDOWS\system32\USER32.dll
+0x00007ffcdb8d0000 - 0x00007ffcdba56000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ffcd4cf0000 - 0x00007ffcd4f64000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.10240.16384_none_f41f7b285750ef43\COMCTL32.dll
+0x00007ffcdb510000 - 0x00007ffcdb546000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007ffcdbd10000 - 0x00007ffcdbe6c000 	C:\WINDOWS\system32\MSCTF.dll
+0x000000006bd50000 - 0x000000006be22000 	C:\Program Files\Java\jre1.8.0_45\bin\msvcr100.dll
+0x000000006bed0000 - 0x000000006c753000 	C:\Program Files\Java\jre1.8.0_45\bin\server\jvm.dll
+0x00007ffcd9150000 - 0x00007ffcd9173000 	C:\WINDOWS\system32\WINMM.dll
+0x00007ffcd9040000 - 0x00007ffcd906c000 	C:\WINDOWS\system32\WINMMBASE.dll
+0x00007ffcd9870000 - 0x00007ffcd98b4000 	C:\WINDOWS\system32\cfgmgr32.dll
+0x00007ffcd8ff0000 - 0x00007ffcd9017000 	C:\WINDOWS\system32\DEVOBJ.dll
+0x00007ffcdbb40000 - 0x00007ffcdbb48000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ffccf570000 - 0x00007ffccf579000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffcdc7b0000 - 0x00007ffcdc819000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ffcd5970000 - 0x00007ffcd597a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffcdc560000 - 0x00007ffcdc568000 	C:\WINDOWS\system32\NSI.dll
+0x000000006bec0000 - 0x000000006becf000 	C:\Program Files\Java\jre1.8.0_45\bin\verify.dll
+0x000000006be90000 - 0x000000006beb9000 	C:\Program Files\Java\jre1.8.0_45\bin\java.dll
+0x000000006be70000 - 0x000000006be86000 	C:\Program Files\Java\jre1.8.0_45\bin\zip.dll
+0x00007ffcd1b40000 - 0x00007ffcd1cca000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:F:\adt-bundle-windows-x86_64-20131030\sdk\platforms\android-19\android.jar 
+java_command: com.imooc.mooo.utils.HttpUtils
+java_class_path (initial): F:\andorid项目\imooc-mooo\bin\classes;F:\andorid项目\imooc-mooo\libs\xom-1.0d10.jar;F:\andorid项目\imooc-mooo\libs\commons-logging.jar;F:\andorid项目\imooc-mooo\libs\commons-lang-2.1.jar;F:\andorid项目\imooc-mooo\libs\android-support-v4.jar;F:\andorid项目\imooc-mooo\libs\json-lib-1.1-jdk13.jar;F:\andorid项目\imooc-mooo\libs\ezmorph-1.0.2.jar;F:\andorid项目\imooc-mooo\libs\commons-collections-3.0.jar;F:\andorid项目\imooc-mooo\libs\gson-2.2.3.jar;F:\andorid项目\imooc-mooo\libs\commons-beanutils.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_45
+CLASSPATH=.;C:\Program Files\Java\jdk1.8.0_45\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_45\lib\tools.jar;F:\app\xin\product\11.2.0\dbhome_1\BIN\sqlplus.exe;
+PATH=C:/Program Files/Java/jre1.8.0_45/bin/server;C:/Program Files/Java/jre1.8.0_45/bin;C:/Program Files/Java/jre1.8.0_45/lib/amd64;F:\app\xin\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files\MySQL\MySQL Enterprise Backup 3.11\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;F:\adt-bundle-windows-x86_64-20131030\eclipse;
+USERNAME=xin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 10240 (10.0.10240.16384)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4140316k(488208k free), swap 10169628k(3336112k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.45-b02) for windows-amd64 JRE (1.8.0_45-b14), built on Apr 10 2015 10:34:15 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun Nov 29 21:43:25 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
